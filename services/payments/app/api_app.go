@@ -43,7 +43,13 @@ func (a *AppApiService) CloseOrder(ctx context.Context, req CloseOrderRequest) (
 		return nil, fmt.Errorf("field `OutTradeNo` is required and must be specified in CloseOrderRequest")
 	}
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/pay/transactions/out-trade-no/{out_trade_no}/close"
+	var localVarPath string
+	if consts.Global {
+		localVarPath = consts.WechatPayAPIGlobalServer + "/v3/global/transactions/out-trade-no/{out_trade_no}/close"
+	} else {
+		//localVarPath = consts.WechatPayAPIServer + "/v3/pay/transactions/out-trade-no/{out_trade_no}/close"
+	}
+
 	// Build Path with Path Params
 	localVarPath = strings.Replace(localVarPath, "{"+"out_trade_no"+"}", neturl.PathEscape(core.ParameterToString(*req.OutTradeNo, "")), -1)
 

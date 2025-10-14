@@ -43,7 +43,13 @@ func (a *JsapiApiService) CloseOrder(ctx context.Context, req CloseOrderRequest)
 		return nil, fmt.Errorf("field `OutTradeNo` is required and must be specified in CloseOrderRequest")
 	}
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/pay/transactions/out-trade-no/{out_trade_no}/close"
+	var localVarPath string
+	if consts.Global {
+		localVarPath = consts.WechatPayAPIGlobalServer + "/v3/global/transactions/out-trade-no/{out_trade_no}/close"
+	} else {
+		//localVarPath = consts.WechatPayAPIServer + "/v3/pay/transactions/out-trade-no/{out_trade_no}/close"
+	}
+
 	// Build Path with Path Params
 	localVarPath = strings.Replace(localVarPath, "{"+"out_trade_no"+"}", neturl.PathEscape(core.ParameterToString(*req.OutTradeNo, "")), -1)
 
@@ -79,8 +85,7 @@ func (a *JsapiApiService) Prepay(ctx context.Context, req PrepayRequest) (resp *
 		localVarHeaderParams = nethttp.Header{}
 	)
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/pay/transactions/jsapi"
-	// Make sure All Required Params are properly set
+	localVarPath := consts.WechatPayAPIGlobalServer + "/v3/global/transactions/jsapi"
 
 	// Setup Body Params
 	localVarPostBody = req
@@ -121,7 +126,8 @@ func (a *JsapiApiService) QueryOrderById(ctx context.Context, req QueryOrderById
 		return nil, nil, fmt.Errorf("field `TransactionId` is required and must be specified in QueryOrderByIdRequest")
 	}
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/pay/transactions/id/{transaction_id}"
+	localVarPath := consts.WechatPayAPIGlobalServer + "/v3/global/transactions/id/{transaction_id}"
+
 	// Build Path with Path Params
 	localVarPath = strings.Replace(localVarPath, "{"+"transaction_id"+"}", neturl.PathEscape(core.ParameterToString(*req.TransactionId, "")), -1)
 
@@ -170,7 +176,8 @@ func (a *JsapiApiService) QueryOrderByOutTradeNo(ctx context.Context, req QueryO
 		return nil, nil, fmt.Errorf("field `OutTradeNo` is required and must be specified in QueryOrderByOutTradeNoRequest")
 	}
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/pay/transactions/out-trade-no/{out_trade_no}"
+	localVarPath := consts.WechatPayAPIGlobalServer + "/v3/global/transactions/out-trade-no/{out_trade_no}"
+
 	// Build Path with Path Params
 	localVarPath = strings.Replace(localVarPath, "{"+"out_trade_no"+"}", neturl.PathEscape(core.ParameterToString(*req.OutTradeNo, "")), -1)
 

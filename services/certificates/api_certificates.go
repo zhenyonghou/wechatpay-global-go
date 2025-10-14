@@ -33,7 +33,12 @@ func (a *CertificatesApiService) DownloadCertificates(ctx context.Context) (resp
 		localVarHeaderParams = nethttp.Header{}
 	)
 
-	localVarPath := consts.WechatPayAPIServer + "/v3/certificates"
+	var localVarPath string
+	if consts.Global {
+		localVarPath = consts.WechatPayAPIGlobalServer + "/v3/global/certificates"
+	} else {
+		//localVarPath = consts.WechatPayAPIServer + "/v3/certificates"
+	}
 	// Make sure All Required Params are properly set
 
 	// Determine the Content-Type Header

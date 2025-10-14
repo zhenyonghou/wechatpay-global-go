@@ -124,7 +124,13 @@ func (d *CertificateDownloader) updateCertificates(
 }
 
 func (d *CertificateDownloader) performDownloading(ctx context.Context) (*downloadCertificatesResponse, error) {
-	result, err := d.client.Get(ctx, consts.WechatPayAPIServer+"/v3/certificates")
+	var rqUrl string
+	if consts.Global {
+		rqUrl = consts.WechatPayAPIGlobalServer + "/v3/global/certificates"
+	} else {
+		//rqUrl = consts.WechatPayAPIServer+"/v3/certificates"
+	}
+	result, err := d.client.Get(ctx, rqUrl)
 	if err != nil {
 		return nil, err
 	}

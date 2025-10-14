@@ -5,10 +5,14 @@ package consts
 
 import "time"
 
+const (
+	Global = true // 是否使用境外支付
+)
+
 // 微信支付 API 地址
 const (
-	WechatPayAPIServer       = "https://api.mch.weixin.qq.com"  // 微信支付 API 地址
-	WechatPayAPIServerBackup = "https://api2.mch.weixin.qq.com" // 微信支付 API 备份地址
+	//WechatPayAPIServer       = "https://api.mch.weixin.qq.com"   // 微信支付 API 地址
+	WechatPayAPIGlobalServer = "https://apihk.mch.weixin.qq.com" //
 )
 
 // SDK 相关信息
