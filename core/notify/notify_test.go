@@ -15,13 +15,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/validators"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth/validators"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/verifiers"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth/verifiers"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
 
 	"github.com/agiledragon/gomonkey"
 )

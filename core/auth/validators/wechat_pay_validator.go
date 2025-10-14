@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/consts"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/consts"
 )
 
 type wechatPayValidator struct {

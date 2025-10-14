@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/cipher/decryptors"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/cipher/encryptors"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/cipher/decryptors"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/cipher/encryptors"
 )
 
 type Student struct {

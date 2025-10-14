@@ -14,10 +14,10 @@ import (
 	"context"
 	"log"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/payrollcard"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/option"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/services/payrollcard"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
 )
 
 func ExampleTransferBatchApiService_CreateTransferBatch() {

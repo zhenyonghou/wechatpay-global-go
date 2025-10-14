@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core/cipher"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/cipher"
 )
 
 type cipherType string
@@ -43,6 +43,7 @@ func init() {
 // 为了保证通信过程中敏感信息字段（如用户的住址、银行卡号、手机号码等）的机密性，微信支付API v3要求：
 //  1. 商户对上送的敏感信息字段进行加密
 //  2. 微信支付对下行的敏感信息字段进行加密
+//
 // 详见：https://wechatpay-api.gitbook.io/wechatpay-api-v3/qian-ming-zhi-nan-1/min-gan-xin-xi-jia-mi
 type WechatPayCipher struct {
 	encryptor cipher.Encryptor

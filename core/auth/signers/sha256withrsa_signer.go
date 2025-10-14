@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth"
+	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
 )
 
 // SHA256WithRSASigner Sha256WithRSA 数字签名生成器
