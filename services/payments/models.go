@@ -41,18 +41,20 @@ type PromotionGoodsDetail struct {
 
 // Transaction
 type Transaction struct {
-	Mchid           *string            `json:"mchid,omitempty"`
-	Appid           *string            `json:"appid,omitempty"`
-	OutTradeNo      *string            `json:"out_trade_no,omitempty"`
-	TransactionId   *string            `json:"transaction_id,omitempty"`
+	Mchid      *string `json:"mchid,omitempty"`
+	Appid      *string `json:"appid,omitempty"`
+	OutTradeNo *string `json:"out_trade_no,omitempty"`
+
+	Id *string `json:"id"` // 微信支付订单号
+	//TransactionId   *string            `json:"transaction_id,omitempty"`
 	Attach          *string            `json:"attach,omitempty"`
-	TradeType       *string            `json:"trade_type,omitempty"`
-	BankType        *string            `json:"bank_type,omitempty"`
-	SuccessTime     *string            `json:"success_time,omitempty"`
-	TradeState      *string            `json:"trade_state,omitempty"`
-	TradeStateDesc  *string            `json:"trade_state_desc,omitempty"`
-	Payer           *TransactionPayer  `json:"payer,omitempty"`
-	Amount          *TransactionAmount `json:"amount,omitempty"`
+	TradeType       *string            `json:"trade_type"`          // 交易类型
+	BankType        *string            `json:"bank_type,omitempty"` // 付款银行
+	SuccessTime     *string            `json:"success_time"`        // 支付完成时间
+	TradeState      *string            `json:"trade_state"`         // 交易状态
+	TradeStateDesc  *string            `json:"trade_state_desc"`    // 交易状态描述
+	Payer           *TransactionPayer  `json:"payer"`
+	Amount          *TransactionAmount `json:"amount"`
 	ExchangeRate    *ExchangeRate      `json:"exchange_rate,omitempty"`
 	PromotionDetail []PromotionDetail  `json:"promotion_detail,omitempty"`
 }

@@ -26,7 +26,6 @@ type EncryptedResource struct {
 	Ciphertext     string `json:"ciphertext"`
 	AssociatedData string `json:"associated_data"`
 	Nonce          string `json:"nonce"`
-	OriginalType   string `json:"original_type"`
 
 	Plaintext string // Ciphertext 解密后内容
 }
