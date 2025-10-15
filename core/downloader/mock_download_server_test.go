@@ -17,8 +17,8 @@ import (
 
 	"github.com/agiledragon/gomonkey"
 	"github.com/stretchr/testify/require"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/consts"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
+	"github.com/zhenyonghou/wechatpay-global-go/core/consts"
+	"github.com/zhenyonghou/wechatpay-global-go/utils"
 )
 
 const (

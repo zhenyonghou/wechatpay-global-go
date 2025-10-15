@@ -6,7 +6,7 @@ import (
 	"context"
 	"crypto/rsa"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
+	"github.com/zhenyonghou/wechatpay-global-go/utils"
 )
 
 // WechatPayDecryptor 微信支付字符串解密器

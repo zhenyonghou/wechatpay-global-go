@@ -15,9 +15,9 @@ import (
 	nethttp "net/http"
 	neturl "net/url"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/consts"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/services"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/core/consts"
+	"github.com/zhenyonghou/wechatpay-global-go/services"
 )
 
 type StatusApiService services.Service

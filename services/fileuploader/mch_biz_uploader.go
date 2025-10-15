@@ -6,8 +6,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/services"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/services"
 )
 
 // MchBizUploadResponse 商户上传反馈图片API返回结果

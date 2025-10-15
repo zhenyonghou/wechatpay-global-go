@@ -10,7 +10,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth"
 )
 
 // WechatPayResponseValidator 微信支付 API v3 默认应答报文验证器

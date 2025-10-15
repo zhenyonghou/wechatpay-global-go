@@ -26,10 +26,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth/credentials"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/cipher"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/consts"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth/credentials"
+	"github.com/zhenyonghou/wechatpay-global-go/core/cipher"
+	"github.com/zhenyonghou/wechatpay-global-go/core/consts"
 )
 
 var (

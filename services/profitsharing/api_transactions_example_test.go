@@ -14,10 +14,10 @@ import (
 	"context"
 	"log"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/services/profitsharing"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/core/option"
+	"github.com/zhenyonghou/wechatpay-global-go/services/profitsharing"
+	"github.com/zhenyonghou/wechatpay-global-go/utils"
 )
 
 func ExampleTransactionsApiService_QueryOrderAmount() {

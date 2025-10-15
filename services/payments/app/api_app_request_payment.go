@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/utils"
 )
 
 // PrepayWithRequestPaymentResponse 预下单ID，并包含了调起支付的请求参数

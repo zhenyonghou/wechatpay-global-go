@@ -1,4 +1,4 @@
-module github.com/wechatpay-apiv3/wechatpay-global-go
+module github.com/zhenyonghou/wechatpay-global-go
 
 go 1.16
 

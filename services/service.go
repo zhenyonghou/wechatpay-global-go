@@ -4,7 +4,7 @@
 package services
 
 import (
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
 )
 
 // Service 微信支付 API v3 Go SDK 服务类型

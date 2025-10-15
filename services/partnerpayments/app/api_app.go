@@ -17,10 +17,10 @@ import (
 	neturl "net/url"
 	"strings"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/consts"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/services"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/services/partnerpayments"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/core/consts"
+	"github.com/zhenyonghou/wechatpay-global-go/services"
+	"github.com/zhenyonghou/wechatpay-global-go/services/partnerpayments"
 )
 
 type AppApiService services.Service

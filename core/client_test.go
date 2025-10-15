@@ -26,12 +26,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth/signers"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/auth/verifiers"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-global-go/utils"
+	"github.com/zhenyonghou/wechatpay-global-go/core"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth/signers"
+	"github.com/zhenyonghou/wechatpay-global-go/core/auth/verifiers"
+	"github.com/zhenyonghou/wechatpay-global-go/core/option"
+	"github.com/zhenyonghou/wechatpay-global-go/utils"
 )
 
 const (

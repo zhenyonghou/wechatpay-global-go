@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/wechatpay-apiv3/wechatpay-global-go/core/cipher"
+	"github.com/zhenyonghou/wechatpay-global-go/core/cipher"
 )
 
 type cipherType string
