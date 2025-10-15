@@ -38,10 +38,8 @@ type Amount struct {
 }
 
 type ExchangeRate struct {
-	// 汇率类型
-	Type string `json:"type"`
-	// 汇率值 rate值是兑换比例乘以10的8次方
-	Rate *int `json:"rate"`
+	Type string `json:"type"` // 汇率类型
+	Rate *int   `json:"rate"` // 汇率值 rate值是兑换比例乘以10的8次方
 }
 
 // AmountReq
