@@ -96,31 +96,45 @@ func (o Transaction) String() string {
 	if o.OutTradeNo != nil {
 		ret += fmt.Sprintf("OutTradeNo:%s, ", *o.OutTradeNo)
 	}
-	if o.Id != nil {
+	if o.Id == nil {
+		ret += "Id:<nil>, "
+	} else {
 		ret += fmt.Sprintf("Id:%s, ", *o.Id)
 	}
 	if o.Attach != nil {
 		ret += fmt.Sprintf("Attach:%s, ", *o.Attach)
 	}
-	if o.TradeType != nil {
+	if o.TradeType == nil {
+		ret += "TradeType:<nil>, "
+	} else {
 		ret += fmt.Sprintf("TradeType:%s, ", *o.TradeType)
 	}
 	if o.BankType != nil {
 		ret += fmt.Sprintf("BankType:%s, ", *o.BankType)
 	}
-	if o.SuccessTime != nil {
+	if o.SuccessTime == nil {
+		ret += "SuccessTime:<nil>, "
+	} else {
 		ret += fmt.Sprintf("SuccessTime:%s, ", *o.SuccessTime)
 	}
-	if o.TradeState != nil {
+	if o.TradeState == nil {
+		ret += "TradeState:<nil>, "
+	} else {
 		ret += fmt.Sprintf("TradeState:%s, ", *o.TradeState)
 	}
-	if o.TradeStateDesc != nil {
+	if o.TradeStateDesc == nil {
+		ret += "TradeStateDesc:<nil>, "
+	} else {
 		ret += fmt.Sprintf("TradeStateDesc:%s, ", *o.TradeStateDesc)
 	}
-	if o.Payer != nil {
+	if o.Payer == nil {
+		ret += "Payer:<nil>, "
+	} else {
 		ret += fmt.Sprintf("Payer:%v, ", o.Payer)
 	}
-	if o.Amount != nil {
+	if o.Amount == nil {
+		ret += "Amount:<nil>, "
+	} else {
 		ret += fmt.Sprintf("Amount:%v, ", o.Amount)
 	}
 	if o.ExchangeRate != nil {
@@ -159,7 +173,9 @@ func (o TransactionAmount) String() string {
 
 func (o PromotionDetail) String() string {
 	var ret string
-	if o.PromotionId != nil {
+	if o.PromotionId == nil {
+		ret += "PromotionId:<nil>, "
+	} else {
 		ret += fmt.Sprintf("PromotionId:%s, ", *o.PromotionId)
 	}
 	if o.Name != nil {
@@ -197,16 +213,24 @@ func (o PromotionDetail) String() string {
 
 func (o PromotionGoodsDetail) String() string {
 	var ret string
-	if o.GoodsId != nil {
+	if o.GoodsId == nil {
+		ret += "GoodsId:<nil>, "
+	} else {
 		ret += fmt.Sprintf("GoodsId:%s, ", *o.GoodsId)
 	}
-	if o.Quantity != nil {
+	if o.Quantity == nil {
+		ret += "Quantity:<nil>, "
+	} else {
 		ret += fmt.Sprintf("Quantity:%d, ", *o.Quantity)
 	}
-	if o.UnitPrice != nil {
+	if o.UnitPrice == nil {
+		ret += "UnitPrice:<nil>, "
+	} else {
 		ret += fmt.Sprintf("UnitPrice:%d, ", *o.UnitPrice)
 	}
-	if o.DiscountAmount != nil {
+	if o.DiscountAmount == nil {
+		ret += "DiscountAmount:<nil>, "
+	} else {
 		ret += fmt.Sprintf("DiscountAmount:%d, ", *o.DiscountAmount)
 	}
 	if o.GoodsRemark != nil {

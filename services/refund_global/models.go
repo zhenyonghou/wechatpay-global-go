@@ -42,6 +42,17 @@ type ExchangeRate struct {
 	Rate *int   `json:"rate"` // 汇率值 rate值是兑换比例乘以10的8次方
 }
 
+func (o ExchangeRate) String() string {
+	var ret string
+	ret += fmt.Sprintf("Type:%s, ", o.Type)
+	if o.Rate == nil {
+		ret += "Rate:<nil>"
+	} else {
+		ret += fmt.Sprintf("Rate:%v", *o.Rate)
+	}
+	return fmt.Sprintf("ExchangeRate{%s}", ret)
+}
+
 // AmountReq
 type AmountReq struct {
 	// 退款金额，币种的最小单位，只能为整数，不能超过原订单支付金额。
